@@ -1,0 +1,84 @@
+[gd_resource type="Theme" load_steps=15 format=3 uid="uid://dny54g24f7gwo"]
+
+[ext_resource type="Texture2D" uid="uid://c0bk5brybuvjj" path="res://assets/ui/basic_ui_sprites.png" id="1_m6olb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdx10"]
+atlas = ExtResource("1_m6olb")
+region = Rect2(201, 105, 30, 30)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_echm2"]
+texture = SubResource("AtlasTexture_sdx10")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_32fvi"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vn3nu"]
+atlas = SubResource("CompressedTexture2D_32fvi")
+region = Rect2(11, 107, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k05v7"]
+texture = SubResource("AtlasTexture_vn3nu")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 1.0
+region_rect = Rect2(0, 0, 26, 23)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qhcys"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2u5h4"]
+atlas = SubResource("CompressedTexture2D_qhcys")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7lb71"]
+texture = SubResource("AtlasTexture_2u5h4")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 1.0
+region_rect = Rect2(0, 0, 26, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjlrr"]
+atlas = ExtResource("1_m6olb")
+region = Rect2(11, 155, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_23b6i"]
+texture = SubResource("AtlasTexture_pjlrr")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 1.0
+region_rect = Rect2(0, 0, 26, 23)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a7fwu"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvel3"]
+atlas = SubResource("CompressedTexture2D_a7fwu")
+region = Rect2(11, 107, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jevd6"]
+texture = SubResource("AtlasTexture_xvel3")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 1.0
+region_rect = Rect2(0, 0, 26, 23)
+
+[resource]
+DarkWoodPanel/base_type = &"PanelContainer"
+DarkWoodPanel/styles/panel = SubResource("StyleBoxTexture_echm2")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+ToolButton/base_type = &"Button"
+ToolButton/styles/focus = SubResource("StyleBoxTexture_k05v7")
+ToolButton/styles/hover = SubResource("StyleBoxTexture_7lb71")
+ToolButton/styles/normal = SubResource("StyleBoxTexture_23b6i")
+ToolButton/styles/pressed = SubResource("StyleBoxTexture_jevd6")
